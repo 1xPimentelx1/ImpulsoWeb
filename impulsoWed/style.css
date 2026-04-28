@@ -80,11 +80,32 @@ section h2 {
 }
 
 /* DESTAQUE */
-.destaque {
-  border: 2px solid #22c55e;
+.destaque_bronze{
+  border: 2px solid #CD7F32;
   transform: scale(1.02);
 }
+.destaque_prata {
+  border: 2px solid #C0C0C0;
+  transform: scale(1.02);
+}
+.destaque_ouro {
+  border: 2px solid #FFD700;
+  transform: scale(1.02);
+}
+.card {
+  cursor: pointer;
+}
+/* CARDS APAGADOS */
+.card {
+  opacity: 0.5;
+  transition: 0.3s;
+}
 
+/* QUANDO PASSA O MOUSE */
+.card:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
 /* CONTATO */
 .contato {
   background: #e2e8f0;
@@ -151,6 +172,67 @@ section h2 {
   100% {
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+
+/* FOOTER */
+.footer {
+  background: #0f172a;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 10px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin: 5px 0;
+}
+
+.footer-col a {
+  color: #cbd5f5;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: #22c55e;
+}
+
+/* PARTE DE BAIXO */
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #334155;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* RESPONSIVO */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
   }
 }
 
