@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suporte - ImpulsoWeb</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .faq {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .faq-item {
+      background: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .faq-item p {
+      display: none;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .faq-item.active p {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Suporte</h1>
+  <p>Estamos aqui para te ajudar</p>
+  <button class="btn-voltar" onclick="window.location.href='index.html'">
+  ← Voltar para início
+</button>
+</header>
+
+<section>
+  <h2>Dúvidas Frequentes</h2>
+
+  <div class="faq">
+
+    <div class="faq-item" onclick="toggleFAQ(this)">
+      <h4>Quanto tempo leva para criar o site?</h4>
+      <p>Normalmente entre 2 a 5 dias úteis.</p>
+    </div>
+
+    <div class="faq-item" onclick="toggleFAQ(this)">
+      <h4>Posso pedir alterações depois?</h4>
+      <p>Sim! Dependendo do plano, você tem alterações incluídas.</p>
+    </div>
+
+    <div class="faq-item" onclick="toggleFAQ(this)">
+      <h4>Vocês fazem sites para qualquer tipo de negócio?</h4>
+      <p>Sim, atendemos empresas de todos os segmentos.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+  <h2>Fale com o suporte</h2>
+  <p>Precisa de ajuda? Clique abaixo:</p>
+
+  <button onclick="window.open('https://wa.me/5511999999999','_blank')">
+    Falar no WhatsApp
+  </button>
+</section>
+
+<script>
+function toggleFAQ(element) {
+  element.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
